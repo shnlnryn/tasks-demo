@@ -13,9 +13,11 @@ mongoose.connect(
 // Create the schema or structure of our object in Mongoose
 const taskSchema = new mongoose.Schema({
     title: String, // Add title property of type string
+    Priority: String
     completed: { // Add completed property
         type: Boolean, // Set type to boolean
         default: false // Set default to false
+    
     }
 });
 
